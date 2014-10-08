@@ -186,3 +186,40 @@ Docker Orchestration
 
 the beginning...
 ----------------
+
+
+---
+
+
+Q&A
+---
+
+
+----
+
+
+### O incrédulo: Ok, mas quais são os problemas com o Docker?
+
+----
+
+1. Alto no hype cycle (img aqui)
+2. Preocupações sobre segurança e estabilidade
+3. Rampa de equipe
+4. Use cases parciais
+
+
+----
+
+### O experiente: Tá, mas e porque eu não posso usar só Puppet & afins?
+
+Poder, pode :)
+
+mas 1) não é a mesma coisa em termos de reprodutibilidade e 2) não provê a mesma capacidade de escalada elástica
+
+----
+
+#### O empolgado: Legal, legal, muito legal! Onde eu assino?!?
+
+1. Crie seu próprio sandbox: goto Vagrant + Docker
+2. Ouça a própria Docker
+3. Entre no GUCloud (nudge nudge)
