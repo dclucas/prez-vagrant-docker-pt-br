@@ -4,6 +4,7 @@
   "description": "Carregue seus ambientes no bolso com Vagrant e Docker",
   "main": "presentation.md",
   "scripts": {
+    "start": "node_modules/reveal-md/bin/server-cli.js presentation.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
