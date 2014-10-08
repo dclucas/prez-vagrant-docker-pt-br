@@ -99,6 +99,15 @@ Note: this page intentionally left blank (not!)
 
 ----
 
+
+###Conceitos:
+* Um *container* é uma unidade de execução
+* Uma *imagem* é a base para um container
+* Uma *dockerfile* é uma especificação para a criação de imagens docker
+
+
+----
+
 ###Por que um dev gosta disso?
 
 Portabilidade + Reprodutibilidade
@@ -166,33 +175,28 @@ Ambientes locais e hosted iguaizinhos!
 Docker-based promotions
 -----------------------
 
-* No build: docker push
-* No deploy: docker pull
+* Build: docker push
+* Deploy: docker pull
 
 
 ----
 
 
-Docker Orchestration
---------------------
+Docker Extras
+-------------
+
 * MesoSphere
 * Kubernetes
 * OpenShift
 * Flynn
 * Deis
-
----
-
-
-the beginning...
-----------------
-
+* Fig
 
 ---
 
 
 Q&A
----
+===
 
 
 ----
@@ -214,12 +218,12 @@ Q&A
 
 Poder, pode :)
 
-mas 1) não é a mesma coisa em termos de reprodutibilidade e 2) não provê a mesma capacidade de escalada elástica
+mas a) não é a mesma coisa em termos de reprodutibilidade e b) não provê a mesma densidade e capacidade de escalada elástica
 
 ----
 
-#### O empolgado: Legal, legal, muito legal! Onde eu assino?!?
+### O empolgado: Legal, legal, muito legal! Onde eu assino?!?
 
 1. Crie seu próprio sandbox: goto Vagrant + Docker
 2. Ouça a própria Docker
-3. Entre no GUCloud (nudge nudge)
+3. Entre no GUCloud (nudge nudge) (img aqui)
