@@ -72,7 +72,7 @@ E se suas *aplicações* fossem portáteis?
 ----
 
 
-### Problemão de logística até 1950:
+### Problemão de logÍstica até 1950:
 Como transportar e cobrar por cargas tão diferentes entre si?
 
 
@@ -206,7 +206,8 @@ Q&A
 
 ----
 
-1. Alto no hype cycle (img aqui)
+1. Alto no hype cycle
+![Containers](images/Gartner-Hype-Cycle.png)
 2. Preocupações sobre segurança e estabilidade
 3. Rampa de equipe
 4. Use cases parciais
@@ -218,12 +219,12 @@ Q&A
 
 Poder, pode :)
 
-mas a) não é a mesma coisa em termos de reprodutibilidade e b) não provê a mesma densidade e capacidade de escalada elástica
+mas a) não é a mesma coisa em termos de reprodutibilidade e b) não provém a mesma densidade e capacidade de escalada elástica
 
 ----
 
 ### O empolgado: Legal, legal, muito legal! Onde eu assino?!?
 
 1. Crie seu próprio sandbox: goto Vagrant + Docker
-2. Ouça a própria Docker
+2. Ouçaa a própria Docker
 3. Entre no GUCloud (nudge nudge) (img aqui)
