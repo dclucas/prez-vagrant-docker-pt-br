@@ -54,6 +54,16 @@ like so (demo)
 ----
 
 
+sim, o fluxo se resume a:
+´´´
+$ git clone my-repo
+$ vagrant up
+´´´
+
+
+----
+
+
 olhando por baixo dos panos...
 
 
@@ -66,7 +76,25 @@ olhando por baixo dos panos...
 ----
 
 
-E se suas *aplicações* fossem portáteis?
+### Anatomia de um arquivo Vagrant:
+```
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "cbumgard/nodejs"
+
+  config.vm.network "forwarded_port", guest: 1954, host: 1954
+
+  # config.vm.network "private_network", ip: "192.168.33.10"
+
+  # config.vm.synced_folder "../data", "/vagrant_data"
+end
+```
+
+----
+
+
+Ok, mas e se suas *aplicações* fossem portáteis?
 
 
 ----
@@ -100,7 +128,17 @@ Note: this page intentionally left blank (not!)
 ----
 
 
-###Conceitos:
+### Um exemplo com MongoDb
+´´´
+$ docker run --name some-mongo -d mongo
+$ docker run -it --link some-mongo:mongo --rm mongo sh -c 'exec mongo "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'
+$ show dbs
+´´´
+
+----
+
+
+### Conceitos:
 * Um *container* é uma unidade de execução
 * Uma *imagem* é a base para um container
 * Uma *dockerfile* é uma especificação para a criação de imagens docker
@@ -108,7 +146,7 @@ Note: this page intentionally left blank (not!)
 
 ----
 
-###Por que um dev gosta disso?
+### Por que um dev gosta disso?
 
 Portabilidade + Reprodutibilidade
 
@@ -119,7 +157,7 @@ Ei, não dependo de burocratas todo o tempo!
 ----
 
 
-###Por que um devops gosta disso?
+### Por que um devops gosta disso?
 
 Automação + Reprodutibilidade
 
@@ -130,7 +168,7 @@ Ei, é menos trabalho chato!
 ----
 
 
-###Por que um admin gosta disso?
+### Por que um admin gosta disso?
 
 Ei, é menos trabalho!
 
@@ -138,7 +176,7 @@ Ei, é menos trabalho!
 ----
 
 
-###Por que um infra manager gosta disso?
+### Por que um infra manager gosta disso?
 
 ~~Ei, é uma melhor densidade computacional!~~
 
