@@ -1,7 +1,7 @@
 Vagrant & Docker
 ================
 
-Ou *carregue seus ambientes no bolso* com Vagrant e Docker
+Ou *carregue seus ambientes no bolso com Vagrant e Docker*
 
 [diogo.lucas@gmail.com](mailto:diogo.lucas@gmail.com)
 
@@ -75,7 +75,9 @@ olhando por baixo dos panos...
 
 
 ### Anatomia de um arquivo Vagrant (sim, isso é Ruby :)):
+
 ```ruby
+
 # (...)
 VAGRANTFILE_API_VERSION = "2"
 
@@ -92,6 +94,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Exemplo de um shared folder -- pastas compartilhadas entre o host e a VM
   # config.vm.synced_folder "../data", "/vagrant_data"
 end
+
 ```
 
 ----
@@ -150,9 +153,9 @@ $ show dbs
 
 
 ### Conceitos:
-* Um *container* é uma unidade de execução
-* Uma *imagem* é a base para um container
-* Uma *dockerfile* é uma especificação para a criação de imagens docker
+* *Dockerfile:* descreve uma imagem
+* *Imagem:* base (binários) para um container
+* *Container:* unidade de execução
 
 
 ----
@@ -279,5 +282,5 @@ b) menor densidade potencial
 1. [Crie seu próprio sandbox](https://github.com/phusion/open-vagrant-boxes)
 2. [Ouça a própria Docker](http://www.youtube.com/user/dockerrun)
 3. [Entre na IASA/GUCloud (nudge nudge)](http://www.linkedin.com/groups/GU-Cloud-Computing-Porto-Alegre-5018296) 
-![Containers](images/iasa-poa-logo.jpg)
+![IASA](images/iasa-poa-logo.jpg)
 
