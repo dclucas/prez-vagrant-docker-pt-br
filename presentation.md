@@ -36,7 +36,7 @@ voltaremos ~~aokku~~ ao dokku mais tarde
 ---
 
 
-![Vagrant](images/vagrant-logo-01.png)
+![Vagrant](images/vagrant-logo-04.png)
 
 
 ----
@@ -267,14 +267,17 @@ Q&A
 
 ### O experiente: Tá, mas e porque eu não posso usar só Puppet & afins?
 
-Poder, pode :)
+Poder, pode, mas não vai ser a mesma coisa:
 
-mas a) não é a mesma coisa em termos de reprodutibilidade e b) não provém a mesma densidade e capacidade de escalada elástica
+a) menor reprodutibilidade e 
+b) menor densidade potencial
 
 ----
 
 ### O empolgado: Legal, legal, muito legal! Onde eu assino?!?
 
-1. Crie seu próprio sandbox: goto Vagrant + Docker
-2. Ouça a própria Docker
-3. Entre no GUCloud (nudge nudge) (img aqui)
+1. [Crie seu próprio sandbox](https://github.com/phusion/open-vagrant-boxes)
+2. [Ouça a própria Docker](http://www.youtube.com/user/dockerrun)
+3. [Entre na IASA/GUCloud (nudge nudge)](http://www.linkedin.com/groups/GU-Cloud-Computing-Porto-Alegre-5018296) 
+![Containers](images/iasa-poa-logo.jpg)
+
