@@ -57,18 +57,8 @@ like so (demo)
 ----
 
 
-sim, o fluxo se resume a:
-
-```shell
-$ git clone my-repo
-$ vagrant up
-```
-
-
-----
-
-
 olhando por baixo dos panos...
+![Vagrant](images/Vagrant-Under-The-Hood.png)
 
 
 ----
@@ -76,8 +66,7 @@ olhando por baixo dos panos...
 
 ### Anatomia de um arquivo Vagrant (sim, isso é Ruby :)):
 ```ruby
-# (...)
-VAGRANTFILE_API_VERSION = "2"
+# (início do arquivo suprimido -- nothing to see here...)
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Aqui configuramos o base box -- a imagem de base para a criação da VM
@@ -92,6 +81,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Exemplo de um shared folder -- pastas compartilhadas entre o host e a VM
   # config.vm.synced_folder "../data", "/vagrant_data"
 end
+```
+
+----
+
+
+sim, o fluxo se resume a:
+
+```shell
+$ git clone my-repo
+$ vagrant up
 ```
 
 ----
@@ -129,7 +128,7 @@ Como deployar e promover aplicações tão diferentes entre si?
 
 
 ### A solução:
-![Containers](images/shipping-container.jpg)
+![Containers](images/dockerized-container.png)
 Note: this page intentionally left blank (not!)
 
 
