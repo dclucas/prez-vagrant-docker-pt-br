@@ -57,17 +57,6 @@ like so (demo)
 ----
 
 
-sim, o fluxo se resume a:
-
-```shell
-$ git clone my-repo
-$ vagrant up
-```
-
-
-----
-
-
 olhando por baixo dos panos...
 
 
@@ -88,7 +77,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Configurando port forwarding do host para a VM
   config.vm.network "forwarded_port", guest: 1954, host: 1954
 
-  # Exemplo de configuração de um IP fixo (interno) para a VM
+  # Exemplo de preparação da VM, usando shell
+  # config.vm.provision "shell", inline: "cd /vagrant;npm install", privileged: "false"
+
+  # Exemplo de configuração de um IP fixo para acesso do host à máquina
   # config.vm.network "private_network", ip: "192.168.33.10"
 
   # Exemplo de um shared folder -- pastas compartilhadas entre o host e a VM
