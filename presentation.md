@@ -58,6 +58,7 @@ like so (demo)
 
 
 olhando por baixo dos panos...
+![Vagrant](images/Vagrant-Under-The-Hood.png)
 
 
 ----
@@ -66,6 +67,10 @@ olhando por baixo dos panos...
 ### Anatomia de um arquivo Vagrant (sim, isso é Ruby :)):
 
 ```ruby
+<<<<<<< HEAD
+=======
+# (início do arquivo suprimido -- nothing to see here...)
+>>>>>>> d6b3e86f2af91c2ce3cc2ab8d0667e5b44db3ed6
 
 # (...)
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
@@ -85,6 +90,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # config.vm.synced_folder "../data", "/vagrant_data"
 end
 
+```
+
+----
+
+
+sim, o fluxo se resume a:
+
+```shell
+$ git clone my-repo
+$ vagrant up
 ```
 
 ----
@@ -122,7 +137,7 @@ Como deployar e promover aplicações tão diferentes entre si?
 
 
 ### A solução:
-![Containers](images/shipping-container.jpg)
+![Containers](images/dockerized-container.png)
 Note: this page intentionally left blank (not!)
 
 
