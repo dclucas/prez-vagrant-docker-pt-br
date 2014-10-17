@@ -67,10 +67,8 @@ olhando por baixo dos panos...
 ### Anatomia de um arquivo Vagrant (sim, isso é Ruby :)):
 
 ```ruby
-<<<<<<< HEAD
-=======
+
 # (início do arquivo suprimido -- nothing to see here...)
->>>>>>> d6b3e86f2af91c2ce3cc2ab8d0667e5b44db3ed6
 
 # (...)
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
@@ -224,7 +222,7 @@ Docker + Vagrant
 
 ---------------------------------------------------
 
-Ambientes locais e hosted iguaizinhos!
+Prod-like na sua máquina
 
 ----
 
