@@ -68,9 +68,6 @@ olhando por baixo dos panos...
 
 ```ruby
 
-# (início do arquivo suprimido -- nothing to see here...)
-
-# (...)
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Configurando a imagem (Vagrant) de base para a VM
   config.vm.box = "cbumgard/nodejs"
@@ -246,6 +243,18 @@ Docker Extras
 * Flynn
 * Deis
 * Fig
+
+----
+
+Momento *holy sh#t*
+
+
+----
+
+
+![Containers](images/docker-windows-linux.png)
+
+
 
 ---
 
